@@ -1,0 +1,9 @@
+<app-contrato> </app-contrato>
+<app-datos></app-datos>
+
+<div>
+    @for (foto of fotos; track foto.id) {
+        <img src="{{foto.url}}" alt="{{foto.id}}"/>
+        <p>{{foto.descripcion}}</p>
+    }
+</div>
